@@ -9,21 +9,35 @@
 /* Begin PBXBuildFile section */
 		B961933929E4ACBC0015760B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B961933829E4ACBC0015760B /* AppDelegate.swift */; };
 		B961933B29E4ACBC0015760B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B961933A29E4ACBC0015760B /* SceneDelegate.swift */; };
-		B961933D29E4ACBC0015760B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B961933C29E4ACBC0015760B /* ViewController.swift */; };
 		B961934029E4ACBC0015760B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B961933E29E4ACBC0015760B /* Main.storyboard */; };
 		B961934229E4ACBD0015760B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B961934129E4ACBD0015760B /* Assets.xcassets */; };
 		B961934529E4ACBD0015760B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B961934329E4ACBD0015760B /* LaunchScreen.storyboard */; };
+		B961935329E4AECC0015760B /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B961935229E4AECC0015760B /* MainTabController.swift */; };
+		B961935529E6226C0015760B /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B961935429E6226C0015760B /* FeedController.swift */; };
+		B961935729E623100015760B /* ExploreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B961935629E623100015760B /* ExploreController.swift */; };
+		B961935929E6232A0015760B /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B961935829E6232A0015760B /* NotificationsController.swift */; };
+		B961935B29E623440015760B /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B961935A29E623440015760B /* ConversationsController.swift */; };
+		B961935D29E879730015760B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B961935C29E879730015760B /* Extensions.swift */; };
+		B961936029E9EE320015760B /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B961935F29E9EE320015760B /* LoginController.swift */; };
+		B961936229E9EECF0015760B /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B961936129E9EECF0015760B /* RegistrationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B961933529E4ACBB0015760B /* TwitterClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B961933829E4ACBC0015760B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B961933A29E4ACBC0015760B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B961933C29E4ACBC0015760B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B961933F29E4ACBC0015760B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B961934129E4ACBD0015760B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B961934429E4ACBD0015760B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B961934629E4ACBD0015760B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B961935229E4AECC0015760B /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		B961935429E6226C0015760B /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
+		B961935629E623100015760B /* ExploreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreController.swift; sourceTree = "<group>"; };
+		B961935829E6232A0015760B /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
+		B961935A29E623440015760B /* ConversationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsController.swift; sourceTree = "<group>"; };
+		B961935C29E879730015760B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		B961935F29E9EE320015760B /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		B961936129E9EECF0015760B /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,78 @@
 		B961933729E4ACBB0015760B /* TwitterClone */ = {
 			isa = PBXGroup;
 			children = (
+				B961935129E4AD540015760B /* Model */,
+				B961935029E4AD4E0015760B /* View */,
+				B961934F29E4AD450015760B /* ViewModel */,
+				B961934E29E4AD420015760B /* Controller */,
+				B961934D29E4AD3F0015760B /* API */,
+				B961934C29E4AD3D0015760B /* Utils */,
 				B961933829E4ACBC0015760B /* AppDelegate.swift */,
 				B961933A29E4ACBC0015760B /* SceneDelegate.swift */,
-				B961933C29E4ACBC0015760B /* ViewController.swift */,
 				B961933E29E4ACBC0015760B /* Main.storyboard */,
 				B961934129E4ACBD0015760B /* Assets.xcassets */,
 				B961934329E4ACBD0015760B /* LaunchScreen.storyboard */,
 				B961934629E4ACBD0015760B /* Info.plist */,
 			);
 			path = TwitterClone;
+			sourceTree = "<group>";
+		};
+		B961934C29E4AD3D0015760B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B961935C29E879730015760B /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B961934D29E4AD3F0015760B /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		B961934E29E4AD420015760B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B961935E29E9EE180015760B /* Authentication */,
+				B961935229E4AECC0015760B /* MainTabController.swift */,
+				B961935429E6226C0015760B /* FeedController.swift */,
+				B961935629E623100015760B /* ExploreController.swift */,
+				B961935829E6232A0015760B /* NotificationsController.swift */,
+				B961935A29E623440015760B /* ConversationsController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B961934F29E4AD450015760B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B961935029E4AD4E0015760B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B961935129E4AD540015760B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B961935E29E9EE180015760B /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				B961935F29E9EE320015760B /* LoginController.swift */,
+				B961936129E9EECF0015760B /* RegistrationController.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +215,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B961933D29E4ACBC0015760B /* ViewController.swift in Sources */,
+				B961935929E6232A0015760B /* NotificationsController.swift in Sources */,
+				B961935B29E623440015760B /* ConversationsController.swift in Sources */,
 				B961933929E4ACBC0015760B /* AppDelegate.swift in Sources */,
+				B961935D29E879730015760B /* Extensions.swift in Sources */,
+				B961936029E9EE320015760B /* LoginController.swift in Sources */,
+				B961935729E623100015760B /* ExploreController.swift in Sources */,
 				B961933B29E4ACBC0015760B /* SceneDelegate.swift in Sources */,
+				B961935329E4AECC0015760B /* MainTabController.swift in Sources */,
+				B961936229E9EECF0015760B /* RegistrationController.swift in Sources */,
+				B961935529E6226C0015760B /* FeedController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
