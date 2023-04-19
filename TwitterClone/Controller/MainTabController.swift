@@ -6,9 +6,10 @@
 //
 
 import UIKit
+import Firebase
 
 class MainTabController: UITabBarController {
-
+    
     // MARK: - Properties
     
     lazy var actionButton: UIButton = {
@@ -27,13 +28,37 @@ class MainTabController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.backgroundColor = .twitterBlue
+        
         let appearance = UITabBarAppearance()
         tabBar.standardAppearance = appearance
         tabBar.scrollEdgeAppearance = tabBar.standardAppearance
-
         
-        configureViewControllers()
-        configureUI()
+        authenticateUserAndConfigureUI()
+        
+    }
+    
+    // MARK: - API
+    
+    func authenticateUserAndConfigureUI() {
+        if Auth.auth().currentUser == nil {
+            DispatchQueue.main.async {
+                let nav = UINavigationController(rootViewController: LoginController())
+                nav.modalPresentationStyle = .fullScreen
+                self.present(nav, animated: true)
+            }
+        } else {
+            configureViewControllers()
+            configureUI()
+        }
+    }
+    
+    func logUserOut() {
+        do {
+            try Auth.auth().signOut()
+        } catch let error {
+            print("DEBUG: Failed to sign out with error \(error.localizedDescription)")
+        }
     }
     
     // MARK: - Selectors
@@ -41,7 +66,7 @@ class MainTabController: UITabBarController {
     @objc func actionButtonTapped() {
         print(123)
     }
-     
+    
     // MARK: - Helpers
     
     func configureUI() {
@@ -74,5 +99,5 @@ class MainTabController: UITabBarController {
         
         return nav
     }
-
+    
 }
