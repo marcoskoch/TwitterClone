@@ -23,6 +23,7 @@
 		B961936229E9EECF0015760B /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B961936129E9EECF0015760B /* RegistrationController.swift */; };
 		B9E78BE629ED8411000262D1 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E78BE529ED8411000262D1 /* Utilities.swift */; };
 		B9E78BE829EF17C4000262D1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B9E78BE729EF17C4000262D1 /* GoogleService-Info.plist */; };
+		B9E78BEA29F0109F000262D1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E78BE929F0109F000262D1 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		B961936129E9EECF0015760B /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		B9E78BE529ED8411000262D1 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		B9E78BE729EF17C4000262D1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		B9E78BE929F0109F000262D1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +68,6 @@
 				0B821CF2D6EC132E1EBCE490 /* Pods-TwitterClone.debug.xcconfig */,
 				5921E73FC26EEC4C3ACFCF30 /* Pods-TwitterClone.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -113,6 +114,7 @@
 			children = (
 				B961935C29E879730015760B /* Extensions.swift */,
 				B9E78BE529ED8411000262D1 /* Utilities.swift */,
+				B9E78BE929F0109F000262D1 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -302,6 +304,7 @@
 				B961935329E4AECC0015760B /* MainTabController.swift in Sources */,
 				B961936229E9EECF0015760B /* RegistrationController.swift in Sources */,
 				B961935529E6226C0015760B /* FeedController.swift in Sources */,
+				B9E78BEA29F0109F000262D1 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
