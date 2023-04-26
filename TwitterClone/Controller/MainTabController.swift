@@ -107,7 +107,8 @@ class MainTabController: UITabBarController {
     
     func configureViewControllers() {
         
-        let nav1 = templateNavigationController(image: UIImage(named: "home_unselected"), rootViewController: FeedController())
+        let nav1 = templateNavigationController(image: UIImage(named: "home_unselected"),
+                                                rootViewController: FeedController(collectionViewLayout: UICollectionViewFlowLayout()))
         let nav2 = templateNavigationController(image: UIImage(named: "search_unselected"), rootViewController: ExploreController())
         let nav3 = templateNavigationController(image: UIImage(named: "like_unselected"), rootViewController: NotificationsController())
         let nav4 = templateNavigationController(image: UIImage(named: "ic_mail_outline_white_2x-1"), rootViewController: ConversationsController())
