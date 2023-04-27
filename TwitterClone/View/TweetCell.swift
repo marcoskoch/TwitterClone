@@ -11,6 +11,12 @@ class TweetCell: UICollectionViewCell {
     
     // MARK: - Properties
     
+    var tweet: Tweet? {
+        didSet{
+            configure()
+        }
+    }
+    
     private let profileImageView: UIImageView = {
         let iv = UIImageView()
         iv.contentMode = .scaleToFill
@@ -25,7 +31,6 @@ class TweetCell: UICollectionViewCell {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 14)
         label.numberOfLines = 0
-        label.text = "Some test caption"
         return label
     }()
     
@@ -125,5 +130,13 @@ class TweetCell: UICollectionViewCell {
     
     // MARK: - Helpers
     
-    
+    func configure() {
+        guard let tweet = tweet else { return }
+        let viewModel = TweetViewModel(tweet: tweet)
+
+        captionLabel.text = tweet.caption
+        
+        profileImageView.sd_setImage(with: viewModel.profileImageUrl)
+        infoLabel.attributedText = viewModel.userInfoText
+    }
 }
