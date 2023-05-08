@@ -8,7 +8,7 @@
 import UIKit
 import SDWebImage
 
-let reuseIdentifier = "TweetCell"
+private let reuseIdentifier = "TweetCell"
 
 class FeedController: UICollectionViewController {
     
@@ -98,7 +98,7 @@ extension FeedController: UICollectionViewDelegateFlowLayout {
 
 extension FeedController: TweetCellDelegate {
     func handleProfileImageTapped() {
-        let controller = ProfileController(collectionViewLayout: UICollectionViewLayout())
+        let controller = ProfileController(collectionViewLayout: UICollectionViewFlowLayout())
         navigationController?.pushViewController(controller, animated: true)
     }
 }
