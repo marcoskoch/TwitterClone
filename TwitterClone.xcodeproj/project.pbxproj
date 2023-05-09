@@ -33,6 +33,7 @@
 		B9BB833829F724B900ADA564 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BB833729F724B900ADA564 /* User.swift */; };
 		B9C00AA12A098F4A00007451 /* ProfileFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C00AA02A098F4A00007451 /* ProfileFilterView.swift */; };
 		B9C00AA32A09934C00007451 /* ProfileFilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C00AA22A09934C00007451 /* ProfileFilterCell.swift */; };
+		B9D760F42A0AF3FF0015C8A1 /* ProfileHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D760F32A0AF3FF0015C8A1 /* ProfileHeaderViewModel.swift */; };
 		B9E78BE629ED8411000262D1 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E78BE529ED8411000262D1 /* Utilities.swift */; };
 		B9E78BE829EF17C4000262D1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B9E78BE729EF17C4000262D1 /* GoogleService-Info.plist */; };
 		B9E78BEA29F0109F000262D1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E78BE929F0109F000262D1 /* Constants.swift */; };
@@ -70,6 +71,7 @@
 		B9BB833729F724B900ADA564 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B9C00AA02A098F4A00007451 /* ProfileFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFilterView.swift; sourceTree = "<group>"; };
 		B9C00AA22A09934C00007451 /* ProfileFilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFilterCell.swift; sourceTree = "<group>"; };
+		B9D760F32A0AF3FF0015C8A1 /* ProfileHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderViewModel.swift; sourceTree = "<group>"; };
 		B9E78BE529ED8411000262D1 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		B9E78BE729EF17C4000262D1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		B9E78BE929F0109F000262D1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				B9A6102329FB2F1A00E31D3E /* TweetViewModel.swift */,
+				B9D760F32A0AF3FF0015C8A1 /* ProfileHeaderViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				B9A6101829F8067600E31D3E /* UploadTweetController.swift in Sources */,
 				B9BB833829F724B900ADA564 /* User.swift in Sources */,
 				B961935729E623100015760B /* ExploreController.swift in Sources */,
+				B9D760F42A0AF3FF0015C8A1 /* ProfileHeaderViewModel.swift in Sources */,
 				B961933B29E4ACBC0015760B /* SceneDelegate.swift in Sources */,
 				B961935329E4AECC0015760B /* MainTabController.swift in Sources */,
 				B9A6102429FB2F1A00E31D3E /* TweetViewModel.swift in Sources */,
