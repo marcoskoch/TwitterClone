@@ -14,7 +14,7 @@ class ProfileController: UICollectionViewController {
     
     // MARK: - Properties
     
-    private let user: User
+    private var user: User
     
     private var tweets = [Tweet]() {
         didSet { collectionView.reloadData() }
@@ -56,7 +56,7 @@ class ProfileController: UICollectionViewController {
     func configureCollectionView() {
         collectionView.backgroundColor = .white
         collectionView.contentInsetAdjustmentBehavior = .never
-
+        
         collectionView.register(TweetCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         collectionView.register(ProfileHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerIdentifier)
     }
@@ -104,6 +104,23 @@ extension ProfileController: UICollectionViewDelegateFlowLayout {
 // MARK: - ProfileHeaderDelegate
 
 extension ProfileController: ProfileHeaderDelegate {
+    func handleEditProfileFollow(_ header: ProfileHeader) {
+        
+        print("DEBUG: User followed is \(user.isFollowed) before tap")
+        
+        if user.isFollowed {
+            UserService.shared.unfollowUser(uid: user.uid) { err, ref in
+                self.user.isFollowed = false
+                print("DEBUG: User followed is \(self.user.isFollowed) after tap")
+            }
+        } else {
+            UserService.shared.followUser(uid: user.uid) { err, ref in
+                self.user.isFollowed = true
+                print("DEBUG: User followed is \(self.user.isFollowed) after tap")
+            }
+        }
+    }
+    
     func handleDismissal() {
         navigationController?.popViewController(animated: true)
     }
