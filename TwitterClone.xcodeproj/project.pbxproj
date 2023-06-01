@@ -43,6 +43,7 @@
 		B9E78BEA29F0109F000262D1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E78BE929F0109F000262D1 /* Constants.swift */; };
 		B9E78BEC29F08DC8000262D1 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E78BEB29F08DC8000262D1 /* AuthService.swift */; };
 		B9EC02C82A27DC3B00B12D57 /* ActionSheetLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EC02C72A27DC3B00B12D57 /* ActionSheetLauncher.swift */; };
+		B9EC02CA2A29427500B12D57 /* ActionSheetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EC02C92A29427500B12D57 /* ActionSheetCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		B9E78BE929F0109F000262D1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B9E78BEB29F08DC8000262D1 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		B9EC02C72A27DC3B00B12D57 /* ActionSheetLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetLauncher.swift; sourceTree = "<group>"; };
+		B9EC02C92A29427500B12D57 /* ActionSheetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 				B9C00AA22A09934C00007451 /* ProfileFilterCell.swift */,
 				B917875E2A12AAF600A7C1EF /* UserCell.swift */,
 				B91787622A1800E800A7C1EF /* TweetHeader.swift */,
+				B9EC02C92A29427500B12D57 /* ActionSheetCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				B961935B29E623440015760B /* ConversationsController.swift in Sources */,
 				B917875F2A12AAF600A7C1EF /* UserCell.swift in Sources */,
 				B9E78BE629ED8411000262D1 /* Utilities.swift in Sources */,
+				B9EC02CA2A29427500B12D57 /* ActionSheetCell.swift in Sources */,
 				B961933929E4ACBC0015760B /* AppDelegate.swift in Sources */,
 				B961935D29E879730015760B /* Extensions.swift in Sources */,
 				B91787612A16CB7200A7C1EF /* TweetController.swift in Sources */,
